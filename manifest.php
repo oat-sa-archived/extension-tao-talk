@@ -24,7 +24,7 @@ return array(
 	'label' => 'Talk Pages',
 	'description' => 'Allows discussions about resources',
     'license' => 'GPL-2.0',
-    'version' => '0.9',
+    'version' => '0.9.1',
 	'author' => 'Open Assessment Technologies SA',
 	'requires' => array('tao' => '>=2.6'),
 	// for compatibility
@@ -42,7 +42,8 @@ return array(
     ),
     'routes' => array(
         '/taoTalk' => 'oat\\taoTalk\\controller'
-    ),    
+    ),
+    'update' => 'oat\\taoTalk\\scripts\\update\\Updater',
 	'constants' => array(
 	    # views directory
 	    "DIR_VIEWS" => dirname(__FILE__).DIRECTORY_SEPARATOR."views".DIRECTORY_SEPARATOR,
